@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- box icon cdn link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    <title>Document</title>
+    <!-- own css  -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-card{
+            display: grid;
+            display: -ms-grid;
+            grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+            gap: 20px;
+        }
+
+        .service h3{
+            font-size: 4rem;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 4rem;
+        }
+
+        .card-s{
+            background-color: #fff;
+            border-radius: 1rem;
+        }
+        .card-s img{
+            transform: scale(100%);
+            width: 100%;
+         }
+
+        .service-card .card-s h2{
+            font-size: 2.5rem;
+            padding: 4rem 0 0 0;
+        }
+
+        .service-card .card-s p{
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 2rem 3rem;
+
+        }
+
+        .service-card .card-s span{
+        display: flex;
+        padding: 0rem 3rem 4rem 3rem;
+        }
+
+        .card-s .read-more{
+        padding: 1rem 3rem;
+        margin: 0 auto;
+        border: 0.2rem solid #ffa600;
+        outline: none;
+        color: #ffa500;
+        font-size: 1.5rem;
+        background-color: transparent;
+        border-radius: 2rem;
+        transition: all 0.4s;
+        }
+
+        .read-more:hover{
+        background-color: #ffa600;
+        color: #fff;
+        transition: all 0.4s;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+      <ul class="top-header container-fluid p-3 header-bg">
+        <li><a href="#" class="text-darkBlue"><i class='bx bx-phone'></i>+91 9371812019</a></li>
+        <li><a href="#" class="text-darkBlue"><i class='bx bxs-envelope'></i>info@metrotouch.in</a></li>
+        <ul class="icons">
+            <li><a href="#" class="text-darkBlue"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#" class="text-darkBlue"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="#" class="text-darkBlue"><i class='bx bxl-youtube'></i></a></li>
+            <li><a href="#" class="text-darkBlue"><i class='bx bx-chat'></i></a></li>
+        </ul>
+      </ul>
+      <nav>
+        <div class="logo">
+          <a href="#"><img src="img/logo.jpg" alt=""></a>
+        </div>
+        <ul class="nav-links">
+            <li class="hover"><a href="index.html">Home</a></li>
+            <li class="hover"><a href="about.html">About</a></li>
+            <li class="hover"><a href="service.html">service</a></li>
+            <li class="hover"><a href="gallery.html">Gallery</a></li>
+            <br>
+            <li class="login_btn"><a href="contact.html" style="color: #fff;">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="service container-fluid" style="margin-top: 15rem;">
+       <h3>Service</h3>
+       <div class="service-card">
+            <div class="card-s hidden">
+                <img src="img/ColorlessBitesizedKob-max-1mb.gif" alt="">
+                <h2>Website Development</h2>
+                <p>Each innovative business idea is born from the launch of a well-designed and developed website..</p>
+                <span><button class="read-more">Read Mored</button></span>
+            </div>
+            <div class="card-s hiddenright">
+                <img src="img/giphy-1.gif" alt="">
+                <h2>Software Development</h2>
+                <p>The development of an application, software design, platform development designing software </p>
+                <span><button class="read-more">Read Mored</button></span>
+            </div>
+            <div class="card-s hidden">
+                <img src="img/giphy-2.gif" alt="">
+                <h2>Social Media Marketing</h2>
+                <p>Social media marketing is a form of marketing that uses social media platforms.</p>
+                <span><button class="read-more">Read Mored</button></span>
+            </div>
+            <div class="card-s hiddenright">
+                <img src="img/kotlin-for-android-app-development.gif" alt="">
+                <h2>Android Development</h2>
+                <p>Smartphones and tablets are completely changing the way that people run and leave their lives.</p>
+                <span><button class="read-more">Read Mored</button></span>
+            </div>
+            <div class="card-s hiddentop">
+                <img src="img/hosting-gif.gif" alt="">
+                <h2>Website Hosting</h2>
+                <p>A web hosting service is a type of Internet hosting service that hosts websites for clients.</p>
+                <span><button class="read-more">Read Mored</button></span>
+            </div>
+            <div class="card-s hidden">
+                <img src="img/53.-seo-content-writing.gif" alt="">
+                <h2>Content Writing</h2>
+                <p>We are a digital marketing agency, with unmatched and content marketing expertise.</p>
+                <span><button class="read-more">Read Mored</button></span>
+            </div>
+       </div>
+    </section>
+
+    <!-- footer section  -->
+    <footer class="footer container-fluid p-5">
+        <div class="first-bx">
+            <h2>ABOUT METROTOUCH</h2>
+            <P>Building great relationships with METROTOUCH advance your opportunities with the latest computational knowledge for business solutions and manage more effectively, and to protect what you’ve worked so hard to establish.</P>
+        </div>
+        <div class="middle-bx">
+          <h2>SERVICES</h2>
+          <ul>
+            <li><a href="#"> <span><i class='bx bxs-right-arrow'></i></span>Home</a></li>
+            <li><a href="#"><span><i class='bx bxs-right-arrow'></i></span>About Us</a></li>
+            <li><a href="#"><span><i class='bx bxs-right-arrow'></i></span>Services</a></li>
+            <li><a href="#"><span><i class='bx bxs-right-arrow'></i></span>Gallery</a></li>
+          </ul>
+        </div>
+        <div class="right-bx">
+          <h2>Contact</h2>
+          <p> <span><i class='bx bx-current-location'></i></span>Address:Office No:03, First Floor, Bhaskar Plaza,</p>
+          <div style="margin-left: 4rem; margin-top: -1rem;">Bhaskar Plaza,Shahupuri, Kolhapur-416001.</div>
+          <p><span><i class='bx bx-chat'></i></span>Email Id:info@metrotouch.in</p>
+          <p><span><i class='bx bx-phone'></i></span>+91 9371812019</p>
+        </div>
+    </footer>
+    <div class="copywrite">copywrite &copy; 2023. Designed and Developed By <a href="#">Metrotuch</a></div>
+ <!-- swper cdn script  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+      <script src="script.js" defer></script>
+</body>
+</html>
+</body>
+</html>
